@@ -299,22 +299,22 @@ def ProgressBar():
             
 def sideBar():
     
-    selected = option_menu(
-            menu_title="Menu principal",
-            options= ["Home" , "Progression"],
-            icons= ["house","eye"],
-            menu_icon= "cast",
-            default_index=0,
-            orientation="horizontal"
-        )
-    if selected == "Home":
-        st.subheader(f"Page: {selected}")
-        Home()
-        graphs()
-    if selected == "Progression":
-        st.subheader(f"Page: {selected}")
-        ProgressBar()
-        graphs()
+    # selected = option_menu(
+    #         menu_title="Menu principal",
+    #         options= ["Home" , "Progression"],
+    #         icons= ["house","eye"],
+    #         menu_icon= "cast",
+    #         default_index=0,
+    #         orientation="horizontal"
+    #     )
+    # if selected == "Home":
+    #     st.subheader(f"Page: {selected}")
+    #     Home()
+    #     graphs()
+    # if selected == "Progression":
+    #     st.subheader(f"Page: {selected}")
+    #     ProgressBar()
+    #     graphs()
     
     with st.sidebar:
         selected = option_menu(
